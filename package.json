@@ -1,0 +1,27 @@
+{
+  "name": "vad-blir-det-for-mat",
+  "version": "1.0.0",
+  "description": "Hjälp mig välja maträtt",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vidarasberg/vad-blir-det-for-mat.git"
+  },
+  "author": "Vidar Åsberg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vidarasberg/vad-blir-det-for-mat/issues"
+  },
+  "homepage": "https://github.com/vidarasberg/vad-blir-det-for-mat#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "prettier": "2.8.7"
+  }
+}
