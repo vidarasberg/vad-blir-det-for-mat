@@ -41,6 +41,10 @@ const html = (h1, body) => {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Enkel veganmat</title>
   </head>
+  <nav>
+    <a href="/">Alla</a>
+    <a href="random">Random</a>
+  </nav>
   <h1>${h1 ?? ""}</h1>
   <body>${body ?? ""}</body>
 </html>`;
