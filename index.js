@@ -6,14 +6,6 @@ const recept = [
     link: "https://undertian.com/recept/dill-och-potatisgryta-med-kikartor/",
   },
   {
-    name: "Penne med spenat och valnötter",
-    link: "",
-  },
-  {
-    name: "Bönchilli",
-    link: "",
-  },
-  {
     name: "Pasta verde",
     link: "https://www.ica.se/recept/pasta-verde-725961/",
   },
@@ -29,9 +21,17 @@ const recept = [
     name: "Pasta med broccoli och soltorkade tomater",
     link: "https://www.valjvego.se/recept/pasta-med-broccoli-och-soltorkade-tomater",
   },
+  {
+    name: "Penne med spenat och valnötter",
+    link: "",
+  },
+  {
+    name: "Bönchilli",
+    link: "",
+  },
 ];
 
-const html = (h1, body) => {
+const html = (h2, content) => {
   return `
 <!DOCTYPE html>
 <html lang="en">
@@ -40,13 +40,39 @@ const html = (h1, body) => {
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Enkel veganmat</title>
+    <style type="text/css">
+      body {
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        color: rgb(248 250 252);
+        background-color: rgb(39 39 42);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      a:link {
+        color: white;
+      }
+      a:visited {
+        color: green;
+      }
+      a:hover {
+        color: hotpink;
+      }
+    </style>
   </head>
+  
+  <h1>Vad blir det för mat?</h1>
   <nav>
     <a href="/">Alla</a>
     <a href="random">Random</a>
   </nav>
-  <h1>${h1 ?? ""}</h1>
-  <body>${body ?? ""}</body>
+  <h2>${h2 ?? ""}</h2>
+  <body>
+    <p>
+      ${content ?? ""}
+    </p>
+  </body>
 </html>`;
 };
 
